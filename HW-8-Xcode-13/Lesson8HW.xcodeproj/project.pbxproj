@@ -78,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				CE5E37362BA71671009BB608 /* Common */,
-				CE5E372A2BA6405C009BB608 /* AppDelegate */,
 				CE5E37312BA71458009BB608 /* Screen */,
 			);
 			path = Source;
@@ -161,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5E373E2BA71950009BB608 /* Printer.swift */,
+				CE5E372A2BA6405C009BB608 /* AppDelegate */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -404,6 +404,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -435,6 +436,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

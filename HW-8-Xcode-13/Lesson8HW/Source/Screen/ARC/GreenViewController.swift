@@ -31,3 +31,9 @@ class GreenViewController: UIViewController {
         navigationController?.pushViewController(redViewController, animated: true)
     }
 }
+
+extension GreenViewController: PrintingDelegate {
+    func textToPrint() -> String {
+        return "Green Screen"
+    }
+}

@@ -26,7 +26,7 @@ class RedViewController: UIViewController {
 private extension RedViewController {
     
     func setupUI() {
-        view.backgroundColor = .lightRed
+        view.backgroundColor = .red
         
         let taxiLabel = UILabel()
         taxiLabel.text = "🚗"
@@ -42,8 +42,9 @@ private extension RedViewController {
     func setup() {
         
         printer = Printer()
-        printer.redViewController = self
+        printer.delegate = self
         
         printer.startPrinting()
     }
 }
+extension RedViewController: PrintingDelegate {}

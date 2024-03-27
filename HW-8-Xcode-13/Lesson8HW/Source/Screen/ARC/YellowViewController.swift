@@ -20,18 +20,18 @@ class YellowViewController: UIViewController {
     func textToPrint() -> String {
         return "🚖 - жовте таксі у дорозі"
     }
+    
 }
 
 //MARK: - Private
 private extension YellowViewController {
-    
+   
     func setupUI() {
-        view.backgroundColor = .lightYellow
+        view.backgroundColor = .yellow
         
         let taxiLabel = UILabel()
         taxiLabel.text = "🚖"
         taxiLabel.font = .systemFont(ofSize: 200.0)
-        
         view.addSubview(taxiLabel)
         
         taxiLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -42,8 +42,10 @@ private extension YellowViewController {
     func setup() {
         
         printer = Printer()
-        printer.yellowViewController = self
+        printer.delegate = self
         
         printer.startPrinting()
     }
 }
+
+extension YellowViewController: PrintingDelegate {}

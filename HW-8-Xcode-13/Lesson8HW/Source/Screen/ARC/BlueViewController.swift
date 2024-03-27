@@ -26,7 +26,7 @@ class BlueViewController: UIViewController {
 private extension BlueViewController {
     
     func setupUI() {
-        view.backgroundColor = .lightBlue
+        view.backgroundColor = .blue
         
         let taxiLabel = UILabel()
         taxiLabel.text = "🚙"
@@ -42,8 +42,9 @@ private extension BlueViewController {
     func setup() {
         
         printer = Printer()
-        printer.blueViewController = self
+        printer.delegate = self
         
         printer.startPrinting()
     }
 }
+extension BlueViewController: PrintingDelegate {}
